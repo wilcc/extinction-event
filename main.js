@@ -12,3 +12,20 @@ const transparent = function (event){
 for (const li of uls){
     li.addEventListener('click',transparent)
 }
+
+const picture = document.querySelectorAll('section')
+
+const display = function(events){
+    events.target.style.width = '0px'
+}
+
+for (const img of picture){
+    img.addEventListener('click', display);
+}
+
+const button = document.querySelector('#destroy-all')
+
+button.addEventListener('click',destroyAll)
+
+
+
